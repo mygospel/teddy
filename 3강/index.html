@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>3강 css</title>
+		<!-- internal 방식 -->
+		<style>
+			.table1 { width:800px; border:1px solid #000000;}
+			td { border:1px solid #000000;border-collapse: collapse;}
+			.td1 { background-color:#ed711e;}
+			#title { font-size:20pt; font-weight:700;} 
+		</style>
+	</head>
+	<body>
+		<span id="title">이력서</span>
+
+		<table class="table1">
+			<tr>
+				<td class="td1">이름</td>
+				<td bgcolor="yellow">나이</td>
+				<td bgcolor="yellow">직업</td>
+			</tr>
+			<tr>
+				<td colspan="2">조현준</td>
+				<td>개발자</td>
+			</tr>
+			<tr>
+				<td rowspan="2">무나</td>
+				<td>27</td>
+				<td>개발자</td>
+			</tr>
+			<tr>
+				<td>24</td>
+				<td>개발자</td>
+			</tr>
+
+			<tr>
+				<td>무나</td>
+				<td>27</td>
+				<td>개발자</td>
+			</tr>
+
+
+			<tr>
+				<td>무나</td>
+				<td rowspan="3">27</td>
+				<td>개발자</td>
+			</tr>
+			<tr>
+				<td>무나</td>
+				<td>개발자</td>
+			</tr>
+			<tr>
+				<td>무나</td>
+				<td>개발자</td>
+			</tr>
+
+		</table>
+
+
+
+
+
+
+	</body>
+</html>

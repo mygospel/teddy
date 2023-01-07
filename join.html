@@ -1,0 +1,101 @@
+2가지 method<br/>
+1) GET :: 글자수에 제한.<br/>
+2) POST<br/>
+3) radio name 은 똑같이 쓴다.
+<br/><br/><br/>
+<style>
+	.row { clear:both;}
+	.title{ float:left; width:150px;}
+	.content{ float:left;}
+	.inp { width: 120px;}
+	.inp_name { width: 100px;}
+</style>
+<form action="login_ok.php" method="post">
+	<div class="row">
+		<div class="title">ID:</div>
+		<div class="content"><input type="text" name="userid" maxlength="10" class="inp">
+		
+			<button type="button">중복확인</button>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="title">Password:</div>
+		<div class="content"><input type="password" name="userpw" maxlength="20" class="inp"></div>
+	</div>
+
+	<div class="row">
+		<div class="title">Name:</div>
+		<div class="content">
+			<input type="text" name="name" maxlength="20" size="10" value="조현준" class="inp_name">
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="title">Sex : </div>		
+		<div class="content">
+			<input type="radio" name="sex" value="Male" checked> 남자
+			<input type="radio" name="sex" value="Female"> 여자
+		</div>	
+	</div>
+
+	<div class="row">
+		<div class="title">	Interest : </div>	
+		<div class="content">
+			<input type="checkbox" name="interest" value="Sports" checked> Sports
+			<input type="checkbox" name="interest" value="Cooking" > Cooking<br/>
+		</div>	
+	</div>
+	Subject :
+	<select name="subject">
+		<option value="">전공을 선택해주세요.</option>
+		<option value="C" selected>Computer science</option>
+		<option value="M">Management</option>
+	</select><br/>
+
+
+	Birth :
+	<select name="year">
+		<option value="">년도</option>
+		<option value="2020" selected>2020</option>
+		<option value="2021">2021</option>
+	</select>
+	<select name="month">
+		<option value="">월</option>
+		<option value="1" selected>1</option>
+		<option value="2">2</option>
+		<option value="2">2</option>
+		<option value="2">2</option>
+		<option value="2">2</option>
+		<option value="2">2</option>
+		<option value="2">2</option>
+		<option value="12">12</option>
+	</select>
+	<select name="day">
+		<option value="">일</option>
+		<option value="1" selected>1</option>
+		<option value="2">2</option>
+		<option value="2">2</option>
+		<option value="2">2</option>
+		<option value="2">2</option>
+		<option value="2">2</option>
+		<option value="2">2</option>
+		<option value="31">31</option>
+	</select>
+	
+	<br/>
+
+
+	Introduce : <br/>
+	<textarea rows="10" cols="50">안녕하세요...
+저는 조현준입니다.
+	</textarea>
+
+	
+	<br/>
+		
+
+
+	<button type="submit">보내기</button>
+</form>
